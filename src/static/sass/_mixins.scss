@@ -1,0 +1,25 @@
+@mixin imgrpl($width: 0, $height:0) {
+	display:block;
+	text-indent:-9999px;
+	font-size:0.1pt;
+	width: $width;
+	height: $height;
+}
+
+@mixin absolute($top: 0, $left:0) {
+	position:absolute;
+	top:$top;
+	left:$left;
+}
+
+@mixin arredondado($size:5px){
+	border-radius:$size; 
+	-moz-border-radius:$size; 
+	-webkit-border-radius:$size;
+}
+
+@mixin vertical($height:20px){
+	height:$height; 
+	line-height:$height; 
+	vertical-align:middle; 
+}
